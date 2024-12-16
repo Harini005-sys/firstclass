@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+        <legend><h1>Event Registration</h1></legend>
+        <form action="submit_form.php" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br>
+<label for="event">Select Event:</label>
+<select name="event" id="event">
+  <optgroup label="Workshop">
+    <option value="ui/ux">UI/UX</option>
+    <option value="da">data analytics</option>
+    <option value="geminiapi">gemini api</option>
+  </optgroup>
+  <optgroup label="Culturals">
+    <option value="dance">Dance</option>
+    <option value="singing">Singing</option>
+    <option value="Rap">Rap</option>
+  </optgroup>
+</optgroup>
+<optgroup label="Hackthon">
+<option value="hack">tech Hackthon</option>
+</optgroup>
+</select><br><br>
+  
+  <label for="accommodation">Are you a Day Scholar or Hostler?</label><br>
+  <select id="accommodation" name="accommodation">
+      <option value="">-- Select an Option --</option>
+      <option value="dayscholar">Day Scholar</option>
+      <option value="hostler">Hostler</option>
+  </select><br>
+  <label for="accommodation">Accomodation</label><br>
+  <select id="accommodation" name="accommodation">
+      <option value="">-- Select an Option --</option>
+      <option value="dayscholar">AC(1000RS)</option>
+      <option value="hostler">NON-Ac(500RS)</option>
+  </select><br>
+
+  <label for="message">Additional Message:</label><br>
+  <textarea id="message" name="message" rows="4" placeholder="Enter any additional details..."></textarea><br><br>
+  <input type="reset" value="reset">
+
+  <button type="submit">Register</button>
+</form>
+</div>
+</body>
+</html>
+</fieldset>
+</form>
+
+
